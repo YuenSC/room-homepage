@@ -52,6 +52,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
+Tailwind CSS
+
+- Set up Font-family in tailwind.config.js
+
 ### Continued development
 
 ### Useful resources

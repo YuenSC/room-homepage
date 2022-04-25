@@ -4,7 +4,7 @@ import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
-    <div className="min-h-screen  bg-zinc-300 relative font-['Spartan']">
+    <div className="min-h-screen  bg-zinc-300 relative font-spartan">
       <NavBar />
       <Home />
       <About />
