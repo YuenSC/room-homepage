@@ -1,17 +1,15 @@
-import "./App.css";
+import About from "./components/About";
+import Home from "./components/Home";
+import NavBar from "./components/NavBar";
 
-import { useState } from "react";
-
-import logo from "./logo.svg";
-
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <div className="App">
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div className="min-h-screen  bg-zinc-300 relative font-['Spartan']">
+      <NavBar />
+      <Home />
+      <About />
     </div>
   );
-}
+};
 
 export default App;
