@@ -1,13 +1,11 @@
-import About from "./components/About";
+import Header from "./components/Header";
 import Home from "./components/Home";
-import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
     <div className="min-h-screen  bg-zinc-300 relative font-spartan">
-      <NavBar />
+      {/* <Header /> */}
       <Home />
-      <About />
     </div>
   );
 };

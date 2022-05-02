@@ -55,6 +55,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 Tailwind CSS
 
 - Set up Font-family in tailwind.config.js
+- How to do modal in tailwindcss - by headlessui
 
 ### Continued development
 
