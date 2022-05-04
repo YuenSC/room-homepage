@@ -56,6 +56,7 @@ Tailwind CSS
 
 - Set up Font-family in tailwind.config.js
 - How to do modal in tailwindcss - by headlessui
+- responseive image - [art direction problem](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images#art_direction)
 
 ### Continued development
 

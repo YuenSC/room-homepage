@@ -7,7 +7,7 @@ import Modal from "./common/Modal";
 const Header = () => {
   return (
     <div className="absolute w-full pt-10 px-8 text-white">
-      <div className="flex justify-center items-center relative">
+      <div className="flex justify-center items-center relative md:justify-start">
         {/* <button
           type="button"
           className="absolute left-0"

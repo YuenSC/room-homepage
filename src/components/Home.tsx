@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { BsArrowRight } from "react-icons/bs";
 
 import desktopImageHeroOne from "../images/desktop-image-hero-1.jpg";
 import imageAboutDark from "../images/image-about-dark.jpg";
@@ -12,23 +13,38 @@ const Home = () => {
     <>
       <div className="flex flex-col md:flex-row">
         {/* FlexBox 1 */}
-        <picture className="md:h-fit md:w-2/3 object-cover">
-          <source media="(min-width: 768px)" srcSet={desktopImageHeroOne} />
-          <img
-            className="h-full w-full"
-            src={mobileImageHeroOne}
-            alt="mobile"
-          />
+        {/* <img
+          className="object-cover object-left"
+          src={mobileImageHeroOne}
+          srcSet={`${mobileImageHeroOne} 480w, ${desktopImageHeroOne} 800w`}
+          sizes="(max-width: 600px) 100vw, 60vw"
+          alt="mobile"
+        /> */}
+        <picture>
+          <source media="(max-width: 799px)" srcSet={mobileImageHeroOne} />
+          <source media="(min-width: 800px)" srcSet={desktopImageHeroOne} />
+          <img src={desktopImageHeroOne} />
         </picture>
-        <div className="p-10 md:w-1/3">
-          <h2 className="font-bold text-4xl mb-4 md:text-xl">
-            Discover innovative ways to decorate
-          </h2>
-          <p className="mb-10 text-gray-500">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quod
-            impedit optio architecto in quos quo dolore, molestias vel maxime?
-          </p>
-          <p className="text-2xl">Lorem ipsum dolor sit amet.</p>
+
+        <div className="flex flex-col justify-center items-center px-8 py-16 md:px-16">
+          <div>
+            <h2 className="font-bold text-4xl mb-4">
+              Discover innovative ways to decorate
+            </h2>
+            <p className="mb-10 text-darkGray font-medium">
+              We provide unmatched quality, comfort, and style for property
+              owners across the country. Our experts combine form and function
+              in bringing your vision to life. Create a room in your own style
+              with our collection and make your property a reflection of you and
+              what you love.
+            </p>
+            <a href="#" className="block w-fit">
+              <div className="flex items-center w-fit select-none">
+                <p className="text-2xl tracking-[0.75rem]">SHOP NOW</p>
+                <BsArrowRight className="inline-block w-10 h-8 ml-9" />
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
